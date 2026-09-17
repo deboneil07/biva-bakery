@@ -21,8 +21,8 @@ export const qstash_message = async (c: Context) => {
 		const isValid = await receiver.verify({
 			body: rawBody,
 			signature,
-			url: "https://biva-bakery-server-production.up.railway.app/qstash-message",
-			// https://biva-bakery-server-production.up.railway.app/qstash-message
+			url: "https://biva-bakery-backend.onrender.com/qstash-message",
+			// https://biva-bakery-backend.onrender.com/qstash-message
 		});
 
 		// console.log(isValid);
@@ -31,7 +31,7 @@ export const qstash_message = async (c: Context) => {
 			const userData = body;
 			const email = await qstashClient.publishJSON({
 				// url: "https://biva-bakery-backend.onrender.com/send-email",
-				url: "https://biva-bakery-server-production.up.railway.app/send-email",
+				url: "https://biva-bakery-backend.onrender.com/send-email",
 				body: {
 					userData,
 				},

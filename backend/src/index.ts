@@ -32,7 +32,6 @@ const allowedOrigin = [
 	"https://www.thebiva.com",
 	"https://biva-bakery.onrender.com",
 	"https://biva-admin.onrender.com",
-	"https://biva-bakery-production.up.railway.app",
 	// "http://localhost:5173",
 ];
 app.use(
